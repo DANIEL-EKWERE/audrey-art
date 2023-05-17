@@ -113,11 +113,17 @@ header{
   color: var(--text-color);
   padding-top: 15px;
 }
+.newsletter form{
+  width: 380px;
+  max-width: 100%;
+  position: relative;
+  }
 
 .hero .content form input:first-child{
   display: inline-block;
-  max-width: 50%;
-  padding: 14px  150px 14px 15px;
+  width: 100%;
+  max-width: 100%;
+  padding: 14px  50px 14px 15px;
   border: 2px solid var(--color-primary);
   outline: none;
   border-radius: 30px;
@@ -132,42 +138,45 @@ header{
   background-color: var(--color-primary);
   color: var(--text-color);
   box-shadow: 0px 0px 5px #000, 0px 0px 15px #858585;
-  margin-top: 6px;
-  margin-left: 1px;
-  left: 20.8rem;
+  top: 6px;
+  right: 6px;
 }
 
 @media (max-width:990px) {
  .hero .content{
-    padding-top: 100%;
+    padding-top: 70%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
-
+  .newsletter form{
+    width: 280px;
+    max-width: 100%;
+    position: relative;
+    }
   
-.hero .content form input:first-child{
-  display: inline-block;
-  max-width: 2000%;
-  padding: 14px  150px 14px 15px;
-  border: 2px solid var(--color-primary);
-  outline: none;
-  border-radius: 30px;
+ .newsletter form input:first-child{
+    display: inline-block;
+    width: 80%;
+    max-width: 100%;
+    padding: 14px  30px 14px 15px;
+    border: 2px solid #f9004d;
+    outline: none;
+    border-radius: 30px;
 }
-.hero .content  form input:last-child{
-  position: absolute;
-  display: inline-block;
-  outline: none;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 30px;
-  background-color: var(--color-primary);
-  color: var(--text-color);
-  box-shadow: 0px 0px 5px #000, 0px 0px 15px #858585;
-  margin-top: 6px;
-  margin-left: 1px;
-  left: 17.3rem;
+ .newsletter form input:last-child{
+    position: absolute;
+    display: inline-block;
+    outline: none;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 30px;
+    background-color: #f9004d;
+    color: white;
+    box-shadow: 0px 0px 5px #000, 0px 0px 15px #858585;
+    top: 6px;
+    right: 160px;
 }
 
 .hero .content p{
@@ -300,6 +309,11 @@ border-radius: 5px;
   .getStarted{
       display: none;
   }
+
+  .logo{
+    font-size: 15px;
+    font-weight: 700;
+}
 }
 
 @media (max-width: 990px){
@@ -318,11 +332,11 @@ border-radius: 5px;
   }
 
   .cap h5{
-    font-size: 40px;
+    font-size: 30px;
   }
 
   .cap p{
-    font-size: 15px;
+    font-size: 13px;
   }
 }
 
@@ -519,10 +533,23 @@ justify-content: center;
       padding-top: 5px;
   }
 
+  footer .first .email h1{
+    font-size: 23px;
+  }
+  .first form{
+    width: 380px;
+    max-width: 100%;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    /* padding-left: 10%; */
+    /* padding-right: 20%; */
+    }
   .first form input:first-child{
     display: inline-block;
-    max-width: 500%;
-    padding: 14px  150px 14px 15px;
+    width: 90%;
+    max-width: 100%;
+    padding: 14px  50px 14px 15px;
     border: 2px solid #f9004d;
     outline: none;
     border-radius: 30px;
@@ -537,8 +564,8 @@ justify-content: center;
     background-color: var(--color-primary);
     color: var(--text-color);
     box-shadow: 0px 0px 5px #000, 0px 0px 15px #858585;
-    margin-top: 0.5px;
-    margin-left: 230px;
+    top: 6px;
+    right: 1.6rem;
 }
 footer .wrapper1 .logo{
   padding-top: 30%;

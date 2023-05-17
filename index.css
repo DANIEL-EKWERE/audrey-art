@@ -218,6 +218,11 @@ header{
         display: none;
     }
 
+    .logo{
+      font-size: 15px;
+      font-weight: 700;
+  }
+
     .form__search{
         min-width: 10px;
         max-height: 10px;
@@ -594,6 +599,31 @@ header{
     }
   }
 
+  
+.anim{
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+  color: var(--text-color);
+  overflow-y: hidden;
+  overflow-x: hidden;
+  gap: 40px;
+  padding: 10px 10px;
+  margin-top: 10%;
+}
+.anim .element{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+  color: var(--text-color);
+}
+
   footer{
     width: 100%;
     height: fit-content;
@@ -613,18 +643,23 @@ header{
   h3{
     font-size: 14px;
   }
-
-  footer .form form{
+  footer  form{
+    width: 380px;
+    max-width: 100%;
+    position: relative;
+    }
+  /* footer .form form{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-  }
+  } */
 
   .first form input:first-child{
     display: inline-block;
-    max-width: 200%;
-    padding: 14px  200px 14px 15px;
+    max-width: 100%;
+    width: 80%;
+    padding: 14px  130px 14px 15px;
     border: 2px solid #f9004d;
     outline: none;
     border-radius: 30px;
@@ -639,8 +674,8 @@ header{
     background-color: var(--color-primary);
     color: var(--text-color);
     box-shadow: 0px 0px 5px #000, 0px 0px 15px #858585;
-    margin-top: 1px;
-    margin-left: 245px;
+   top: 6px;
+   right: 5.3rem;
 }
 
 
@@ -651,6 +686,7 @@ header{
     grid-template-columns: repeat(2,1fr);
     align-items: center;
     justify-content: center;
+    
   }
 
   footer .wrapper1 .logo{
@@ -676,9 +712,12 @@ header{
 
 
   .des{
-    padding-left: 27%;
+    padding-right: 10%;
     padding-top: 3%;
     text-align: start;
+    padding-bottom: 30%;
+    /* transform: translateY(-23rem); */
+    /* transform: translateX(-1rem); */
   }
 
 .lastPart{
