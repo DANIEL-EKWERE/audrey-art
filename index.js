@@ -18,3 +18,24 @@ function showSlides() {
   setTimeout(showSlides, 2000); // Change image every 2 seconds
 };
 
+
+let menu = document.querySelector('#menu-icon');
+let navlist = document.querySelector('.navlist');
+
+menu.onclick = () => {
+  menu.classList.toggle('bx-x');
+  navlist.classList.toggle('open');
+}
+
+
+const sr = scrollReveal ({
+  distance: "65px",
+  duration: 2600,
+  delay: 450,
+  reset: true
+})
+
+sr.reveal('.sliders', {delay:200, origin: 'top'});
+sr.reveal('.formBox', {delay:300, origin: 'left'});
+sr.reveal('.posts', {delay:400, origin: 'right'});
+sr.reveal('.wrapper', {delay:500, origin: 'bottom'});

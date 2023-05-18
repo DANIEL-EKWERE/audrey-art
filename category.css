@@ -92,8 +92,25 @@ header{
   padding-top: 25%;
   padding-left: 7%;
 
-  /* display: flex;
-  flex-direction: column; */
+}
+
+@media (max-width:450px) {
+  .hero .content{
+    padding-top: 50%;
+    /* padding-left: 7%; */
+  transition: all ease-in-out .5s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+  }
+
+  .newsletter form{
+    width: 250px;
+    max-width: 100%;
+    position: relative;
+    }
 }
 
 .hero .content .h1{
@@ -142,7 +159,7 @@ header{
   right: 6px;
 }
 
-@media (max-width:990px) {
+@media (max-width:350px) {
  .hero .content{
     padding-top: 70%;
     display: flex;
@@ -287,7 +304,7 @@ border-radius: 5px;
 }
 
 
-@media (max-width: 990px) {
+@media (max-width: 350px) {
   #menu-icon{
       display: block;
   }
@@ -295,7 +312,7 @@ border-radius: 5px;
   .navlist{
       position: absolute;
       top: 100%;
-      right: -100%;
+      right: 100%;
       width: 300px;
       height: 40vh;
       display: flex;
@@ -497,7 +514,7 @@ justify-content: center;
 
 .lastPart .copyright{
   display: flex;
-  gap: 28rem;
+  gap: 2rem;
   padding-top: 5%;
 }
 
@@ -543,12 +560,12 @@ justify-content: center;
     align-items: center;
     justify-content: center;
     /* padding-left: 10%; */
-    /* padding-right: 20%; */
+    padding-right: 20%;
     }
   .first form input:first-child{
     display: inline-block;
-    width: 90%;
-    max-width: 100%;
+    width: 500%;
+    max-width: 200%;
     padding: 14px  50px 14px 15px;
     border: 2px solid #f9004d;
     outline: none;
@@ -565,8 +582,10 @@ justify-content: center;
     color: var(--text-color);
     box-shadow: 0px 0px 5px #000, 0px 0px 15px #858585;
     top: 6px;
-    right: 1.6rem;
+    right: 5.3rem;
 }
+
+
 footer .wrapper1 .logo{
   padding-top: 30%;
   font-size: 25px;
@@ -583,7 +602,8 @@ footer .wrapper1{
 footer .wrapper1 .logo{
   padding-top: 10%;
   padding-bottom: 10%;
-
+  transform: translateZ(5rem);
+  transform: translateX(5rem);
 }
 
 
@@ -596,9 +616,11 @@ footer .wrapper1 .content{
   justify-content: flex-end;
   gap: 30px;
   padding-left: 40px;
-  left: 8px;
-  padding-right: 80%;
-  transform: translateY(3rem);
+  left: 5px;
+  padding-right: 14rem;
+  transform: translateY(14rem);
+  line-height: 30px;
+
 }
 
 .des{
@@ -606,6 +628,9 @@ footer .wrapper1 .content{
   padding-right: 70%;
   transform: translateY(-13rem);
   padding-top: 40%;
+  padding-right: 140rem;
+  /* transform: translateY(-15rem); */
+  line-height: 30px;
 }
 .lastPart .copyright{
   display: flex;
@@ -618,10 +643,5 @@ footer .wrapper1 .content{
   flex-direction: column;
   gap: 15px;
 }
-
-/* .anim{
- margin-top: 20rem;
-} */
-
 
 } 
